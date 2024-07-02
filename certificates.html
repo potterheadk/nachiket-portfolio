@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="certificate.css">
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.button-container {
+    margin-left: -330px;
+    margin-bottom: 20px; /* Adjust margin here */
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+div.table-container {
+    margin-top: 20px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <button class="button-container" onclick="goBack()">Go Back</button>
+    </div>
+    
+    
+    <div class="table-container">
+        <table id="indexlist">
+            <tr class="indexhead">
+                <th class="indexcolname">Certificate Name</th>
+                <th class="indexcollastmod">Achieved Date</th>
+            </tr>
+            <tr class="even">
+                <td class="indexcolname"><a href="certificate/python_essential_1.jpg"target="_blank">Python_Essential_Cisco</a></td>
+                <td class="indexcollastmod">2023-12-29</td>
+            </tr>
+            <tr class="odd">
+                <td class="indexcolname"><a href="certificate/CPA_cisco_cpp.png"target="_blank">CPA_Cisco_CPP</a></td>
+                <td class="indexcollastmod">2023-12-02</td>
+            </tr>
+            <tr class="odd">
+                <td class="indexcolname"><a href="certificate/matlab_certificate.jpg"target="_blank">Matlab</a></td>
+                <td class="indexcollastmod">2023-12-27</td>
+            </tr>
+            <tr class="odd">
+                <td class="indexcolname"><a href="certificate/Introduction_jupyter.jpg"target="_blank">Introduction_to_jupyter</a></td>
+                <td class="indexcollastmod">2023-11-18</td>
+            </tr>
+            <tr class="odd">
+                <td class="indexcolname"><a href="certificate/Arduino_training_revised.pdf"target="_blank">Arduino_training_revised</a></td>
+                <td class="indexcollastmod">2023-10-09</td>
+            </tr>
+            <!-- Add more rows for additional certificates -->
+        </table>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
